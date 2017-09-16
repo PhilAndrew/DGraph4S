@@ -34,6 +34,6 @@ sbt publishLocal
 In your build.sbt
 
 ~~~~
-libraryDependencies += "dgaph4s" %% "dgaph4s" % "0.1"
+libraryDependencies += "dgraph4s" %% "dgraph4s" % "0.1"
 ~~~~
 

@@ -1,6 +1,6 @@
 import com.trueaccord.scalapb.compiler.Version.scalapbVersion
 
-name := "dgaph4s"
+name := "dgraph4s"
 
 version := "0.1"
 
