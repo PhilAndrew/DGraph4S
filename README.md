@@ -1,6 +1,6 @@
 # DGraph4S: Scala API for DGraph database
 
-DGraph4S is a Scala API for the DGraph graph database, it uses [GRPC](https://grpc.io/) to communicate with the DGraph database.
+DGraph4S is a Scala API for the [DGraph graph database](https://dgraph.io/), it uses [GRPC](https://grpc.io/) to communicate with the DGraph database.
 
 ## Windows build
 
