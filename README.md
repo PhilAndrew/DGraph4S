@@ -15,7 +15,8 @@ Ensure that DGraph is running and it exposes port 9080 which is the default port
 
 https://hub.docker.com/r/dgraph/dgraph/
 
-~~~~docker pull dgraph/dgraph
+~~~~
+docker pull dgraph/dgraph
 mkdir -p dgraph
 docker run -it -p 8080:8080 -p 9080:9080 -v dgraph:/dgraph --name dgraph dgraph/dgraph dgraph --bindall=true --memory_mb 2048
 ~~~~
@@ -24,4 +25,15 @@ docker run -it -p 8080:8080 -p 9080:9080 -v dgraph:/dgraph --name dgraph dgraph/
 
 The files in src/main/protobuf/ contain the definition of the Protocol Buffers for DGraph GRPC communications, you may need to manually update these files if they change, refer to the README.md in that directory.
 
+## Publish local to use
+
+~~~~
+sbt publishLocal
+~~~~
+
+In your build.sbt
+
+~~~~
+libraryDependencies += "dgaph4s" %% "dgaph4s" % "0.1"
+~~~~
 
