@@ -20,5 +20,8 @@ mkdir -p dgraph
 docker run -it -p 8080:8080 -p 9080:9080 -v dgraph:/dgraph --name dgraph dgraph/dgraph dgraph --bindall=true --memory_mb 2048
 ~~~~
 
+## Keep protobuf files up-to-date
+
+The files in src/main/protobuf/ contain the definition of the Protocol Buffers for DGraph GRPC communications, you may need to manually update these files if they change, refer to the README.md in that directory.
 
 
