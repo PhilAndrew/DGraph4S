@@ -2,6 +2,8 @@ import com.trueaccord.scalapb.compiler.Version.scalapbVersion
 
 name := "dgraph4s"
 
+organization := "dgraph4s"
+
 version := "0.1"
 
 scalaVersion := "2.12.3"
@@ -16,6 +18,5 @@ libraryDependencies ++= Seq(
   "io.grpc" % "grpc-netty" % com.trueaccord.scalapb.compiler.Version.grpcJavaVersion,
   "com.trueaccord.scalapb" %% "scalapb-runtime-grpc" % com.trueaccord.scalapb.compiler.Version.scalapbVersion
 )
-
 
 libraryDependencies += "com.trueaccord.scalapb" %% "scalapb-runtime" % com.trueaccord.scalapb.compiler.Version.scalapbVersion % "protobuf"
